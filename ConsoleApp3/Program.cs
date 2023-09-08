@@ -6,27 +6,54 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-            //if8
+            //if9
             int a;
             int b;
+            int c;
             Console.WriteLine("a=");
-
-            string t = Console.ReadLine();
+            string tA = Console.ReadLine();
+            a = int.Parse(tA);
             Console.WriteLine("b=");
-            string g = Console.ReadLine();
-            a = int.Parse(t);
-            b = int.Parse(g);
-            if (a < b)
+            string tB = Console.ReadLine();
+            b = int.Parse(tB);
+       
+            if(a>b)
             {
-                Console.WriteLine(b + " " + a);
+                c = a ;
+                a = b;
+                b = c;
+                Console.WriteLine("a="+a + "b= " + b);
             }
-            else if (b < a)
+            else
             {
-                Console.WriteLine(a + " " + b);
+                Console.WriteLine("a="+a + "b= " + b);
 
             }
 
-            else Console.WriteLine("числа равны");
+
+
+
+            ////if8
+            //int a;
+            //int b;
+            //Console.WriteLine("a=");
+
+            //string t = Console.ReadLine();
+            //Console.WriteLine("b=");
+            //string g = Console.ReadLine();
+            //a = int.Parse(t);
+            //b = int.Parse(g);
+            //if (a < b)
+            //{
+            //    Console.WriteLine(b + " " + a);
+            //}
+            //else if (b < a)
+            //{
+            //    Console.WriteLine(a + " " + b);
+
+            //}
+
+            //else Console.WriteLine("числа равны");
 
 
 
