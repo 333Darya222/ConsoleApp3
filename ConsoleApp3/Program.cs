@@ -8,7 +8,154 @@ using System.Threading.Tasks;
 namespace ConsoleApp3
 {
     internal class Program
+
     {
+        static void Main(string[] args)
+        {
+            forfor2();
+            //forfor1();
+            //for7();
+            //for6();
+            //for5();
+            //IFIF();
+            //IF();
+            //For1();
+            //begin4();
+            //begin6();
+            //begin9();
+            //begin10();
+            //integer3();
+            //integer4();
+            //cl();
+            //IF12();
+            //integer6();
+            //integer7();
+            //boolean4();
+            //Boolean2();
+            //if3();
+            //if4();
+            //if8();
+            //if9();
+
+            Console.ReadKey();
+        }
+
+        static void forfor2()
+        {
+            int a;
+            Console.WriteLine("a=");
+            string t = Console.ReadLine();
+            a = int.Parse(t);
+            int s = 1;
+
+            for(int i = 1; i <= a; i++)
+            {
+                s *= i;
+                Console.WriteLine(s);
+            }
+        }
+
+        static void forfor1()
+        {
+            
+            for (int i = 1; i <= 50; i++)
+                if(i%3==0)
+                {
+                
+                 Console.WriteLine(i);
+                }
+        }
+
+
+        static void for7()
+        {
+            int a;
+            int b;
+           
+            Console.WriteLine("a=");
+            string tA = Console.ReadLine();
+            a = int.Parse(tA);
+            Console.WriteLine("b=");
+            string tB = Console.ReadLine();
+            b = int.Parse(tB);
+            int S = 0;
+            for (int i = a; i<= b;i++)
+            {
+                S += i;
+                Console.WriteLine(S);
+            }
+
+
+        }
+        
+        static void for6()
+        {
+            double a;
+            Console.WriteLine(" ценa за кг= ");
+            string t = Console.ReadLine();
+            a = double.Parse(t);
+
+            for (double i = 1.2; i <= 2; i = i + 0.2)
+            {
+                Console.WriteLine("Цена за " + i + " кг " + i * a);
+            }
+        }
+
+        static void for5()
+        {
+            double a;
+            Console.WriteLine(" ценa за кг= ");
+            string t = Console.ReadLine();
+            a = double.Parse(t);
+
+            for (double i = 0.1; i <= 1; i = i + 0.1)
+            {
+                Console.WriteLine("Цена за " + i + " кг " + i * a);
+            }
+        }
+
+        static void IFIF()
+        {
+            int a;
+            Console.WriteLine("a=");
+            string t = Console.ReadLine();
+            a = int.Parse(t);
+
+            if (a/100==a%10)
+            {
+                Console.WriteLine("это палиндром");
+            }
+            else
+            {
+                Console.WriteLine("это не палиндром");
+            }
+
+        }
+
+        static void IF()
+        {
+            int a;
+            Console.WriteLine("a=");
+            string t = Console.ReadLine();
+            a = int.Parse(t);
+            string r="рублей";
+            
+
+
+            if (a%10==1)
+            {
+                Console.WriteLine(a+"рубль");
+            }
+            else if (a%10==2)
+            {
+                Console.WriteLine(a+"рубля");
+            }
+            else
+            {
+                Console.WriteLine(a+r);
+            }
+        }
+
         static void if9()
         {
             int a;
@@ -342,165 +489,6 @@ namespace ConsoleApp3
                 Console.WriteLine(k);
             }
         }
-        static void Main(string[] args)
-        {
-            For1();
-            //begin4();
-            //begin6();
-            //begin9();
-            //begin10();
-            //integer3();
-            //integer4();
-            //cl();
-            //IF12();
-            //integer6();
-            //integer7();
-            //boolean4();
-            //Boolean2();
-            //if3();
-            //if4();
-            //if8();
-            //if9();
-
-
-
-
-
-
-
-
-            //int a;
-            //int b;
-            //int c;
-
-            //Console.WriteLine("a=");
-            //string tA = Console.ReadLine();
-            //a = int.Parse(tA);
-            //Console.WriteLine("b=");
-            //string tB = Console.ReadLine();
-            //b = int.Parse(tB);
-            //Console.WriteLine("c=");
-            //string tC = Console.ReadLine();
-            //c = int.Parse(tC);
-
-            //if (a>b && a>c )
-            //{
-            //    if (b > c) ;
-            //    Console.WriteLine($"max {a}");
-            //    Console.WriteLine($"min {c}");
-            //    if (b < c) ;
-            //    Console.WriteLine($"max {a}");
-            //    Console.WriteLine($"min {b}");
-            //}
-
-            //else if (b>a && b>c)
-            //{
-            //    if (a > c) ;
-            //    Console.WriteLine("max="+b);
-            //    Console.WriteLine("min="+c);
-            //    if (a < c) ;
-            //    Console.WriteLine("max="+b);
-            //    Console.WriteLine("min=" + a);
-            //}
-            //else if (c>a&&c>b)
-            //{
-            //    if (a < b) ;
-            //    Console.WriteLine("max+"+b);
-            //    Console.WriteLine("min")
-            //}
-
-            //int a;
-            //int b;
-            //int c;
-            //Console.WriteLine("a=");
-
-            //string t = Console.ReadLine();
-            //Console.WriteLine("b=");
-            //string g = Console.ReadLine();
-            //a = int.Parse(t);
-            //b = int.Parse(g);
-            //if (a!=b)
-            //{
-            //    c = a;
-            //    a = a + b;
-
-            //    b = c + b;
-
-            //}
-            //else
-            //{
-            //}
-            //Console.WriteLine("A=" + (a) + "B=" + (b));
-
-            //int a;
-            //int d;
-            //Console.WriteLine("введи a");
-
-            //string t = Console.ReadLine();
-            //Console.WriteLine("ввести d");
-            //string g = Console.ReadLine();
-            //a = int.Parse(t);
-            //d = int.Parse(g);
-            //if (a < d) {
-            //    Console.WriteLine($" число d {d} больше");
-            //} else if (d < a) {
-            //    Console.WriteLine($" число a {a}  больше");
-            //} else Console.WriteLine("числа равны"); 
-
-
-            //int a;
-
-            //string tmp = Console.ReadLine();
-            //a = int.Parse(tmp);
-            //if( a > 0) {
-            //    a = a + 1;
-            //    Console.WriteLine($"Число a {a} положительное");
-            //} else if( a == 0 ) {
-            //    Console.WriteLine("a равно нулю");
-            //} else { //все остальные случаи
-            //    Console.WriteLine("a отрицательное");
-            //}
-
-
-
-
-            //int a;
-            //int b;
-            //int S;
-            //int P;
-
-            //Console.WriteLine("Привет, считаем S прямоугольника, введите значение сторон");
-            //string tmpA = Console.ReadLine();
-            //string tmpB = Console.ReadLine();
-            //a = int.Parse(tmpA);
-            //b = int.Parse(tmpB);
-            //Console.WriteLine($"S={a*b}, P={2*(a+b)}");
-
-            //Console.WriteLine("S= " +a*b + " ,P= " + 2*(a+b));
-
-
-
-            //Console.WriteLine("введите сторону квадрата");
-            //int a;
-            //string t = Console.ReadLine();
-            //a = int.Parse(t);
-
-            //Console.WriteLine("P="+a*4);
-
-
-
-            //int age;
-            //string name;
-
-            //Console.WriteLine("Привет, как тебя зовут!");
-            //name = Console.ReadLine();
-
-            //Console.WriteLine("Сколько тебе лет");
-            //string tmp = Console.ReadLine();
-            //age = int.Parse(tmp);
-
-            //Console.WriteLine("Привет " + name + " тебе " + age + " лет");
-            Console.ReadKey();
-        }
+      
     }
 }
