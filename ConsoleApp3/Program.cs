@@ -153,7 +153,7 @@ namespace ConsoleApp3
             {
                 Console.WriteLine(a+ p);
             }
-            else if (( a / 10 % 10 == 1)&(a%10>=1&a%10<=10))
+            else if (( a / 10 % 10 == 1)&(a%10>=1&a%10<=9))
             {
                 Console.WriteLine(a + r);
             }
