@@ -14,11 +14,11 @@ namespace ConsoleApp3
         {
             //forfor2();
             //forfor1();
-            for7();
+            //for7();
             //for6();
             //for5();
             //IFIF();
-            //IF();
+            IF();
             //For1();
             //begin4();
             //begin6();
@@ -148,7 +148,7 @@ namespace ConsoleApp3
             {
                 Console.WriteLine(a+"рубль");
             }
-            else if (a%10==2)
+            else if (a%10==2 || a % 10 == 3 || a % 10 == 4)
             {
                 Console.WriteLine(a+"рубля");
             }
