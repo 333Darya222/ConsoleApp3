@@ -152,6 +152,10 @@ namespace ConsoleApp3
             {
                 Console.WriteLine(a+"рубля");
             }
+            else if (a/10==1)
+            {
+                Console.WriteLine(a + "рублей");
+            }
             else
             {
                 Console.WriteLine(a+r);
