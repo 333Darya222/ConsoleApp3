@@ -12,9 +12,9 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-            forfor2();
+            //forfor2();
             //forfor1();
-            //for7();
+            for7();
             //for6();
             //for5();
             //IFIF();
@@ -97,7 +97,8 @@ namespace ConsoleApp3
 
             for (double i = 1.2; i <= 2; i = i + 0.2)
             {
-                Console.WriteLine("Цена за " + i + " кг " + i * a);
+                double s = i * a;
+                Console.WriteLine("Цена за " + (i.ToString("0.0")) + " кг " + (s.ToString("0.0")) );
             }
         }
 
@@ -110,7 +111,8 @@ namespace ConsoleApp3
 
             for (double i = 0.1; i <= 1; i = i + 0.1)
             {
-                Console.WriteLine("Цена за " + i + " кг " + i * a);
+                double s = i * a;
+                Console.WriteLine("Цена за " + (i.ToString("0.0")) + " кг " + (s.ToString("0.0")));
             }
         }
 
