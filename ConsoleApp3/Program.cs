@@ -140,28 +140,49 @@ namespace ConsoleApp3
             Console.WriteLine("a=");
             string t = Console.ReadLine();
             a = int.Parse(t);
-            string r="рублей";
 
+            string r = "рублей";
+            string s = "рубль"
+            string p = "рубля";
 
-
-            if ((a / 10 %10== 2 || a / 10%10 == 3 || a / 10%10 == 4 || a / 10%10 == 5 || a / 10 %10== 6 || a / 10%10 == 7 || a / 10%10 == 8 || a / 10 %10== 9)&a % 10 == 1)
+            if ((a / 10> 1 & a / 10 < 10) & a % 10 == 1)
             {
-                Console.WriteLine(a + "рубль"); 
+                Console.WriteLine(a + s);
             }
-            else if ((a / 10 ==2|| a / 10 %10== 3 || a / 10 %10== 4 || a / 10%10 == 5 || a / 10%10 == 6 || a / 10%10 == 7 || a / 10%10 == 8 || a / 10%10 == 9) &(a%10==2 || a % 10 == 3 || a % 10 == 4))
+            else if (((a / 10 >= 2 & a / 10 < 10) || a / 10 == 1) & (a % 10 >= 2 & a % 10 <= 4))
             {
-                Console.WriteLine(a+"рубля");
-            }
-
-
-            else if (a/10==1&(a%10==1|| a % 10 == 2||a % 10 == 3||a % 10 == 4||a % 10 == 5||a % 10 == 6||a % 10 == 7||a % 10 == 8||a % 10 == 9))
-            {
-                Console.WriteLine(a + r);
+                Console.WriteLine(a+ p);
             }
             else
             {
-                Console.WriteLine(a+r);
+                Console.WriteLine(a + r);
             }
+            //int a;
+            //Console.WriteLine("a=");
+            //string t = Console.ReadLine();
+            //a = int.Parse(t);
+            //string r="рублей";
+
+
+
+            //if ((a / 10 %10== 2 || a / 10%10 == 3 || a / 10%10 == 4 || a / 10%10 == 5 || a / 10 %10== 6 || a / 10%10 == 7 || a / 10%10 == 8 || a / 10 %10== 9)&a % 10 == 1)
+            //{
+            //    Console.WriteLine(a + "рубль"); 
+            //}
+            //else if ((a / 10 ==2|| a / 10 %10== 3 || a / 10 %10== 4 || a / 10%10 == 5 || a / 10%10 == 6 || a / 10%10 == 7 || a / 10%10 == 8 || a / 10%10 == 9) &(a%10==2 || a % 10 == 3 || a % 10 == 4))
+            //{
+            //    Console.WriteLine(a+"рубля");
+            //}
+
+
+            //else if (a/10==1&(a%10==1|| a % 10 == 2||a % 10 == 3||a % 10 == 4||a % 10 == 5||a % 10 == 6||a % 10 == 7||a % 10 == 8||a % 10 == 9))
+            //{
+            //    Console.WriteLine(a + r);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(a+r);
+            //}
         }
 
         static void if9()
