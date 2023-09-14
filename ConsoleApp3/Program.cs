@@ -142,14 +142,14 @@ namespace ConsoleApp3
             a = int.Parse(t);
 
             string r = "рублей";
-            string s = "рубль"
+            string s = "рубль";
             string p = "рубля";
 
-            if ((a / 10> 1 & a / 10 < 10) & a % 10 == 1)
+            if ((a / 10 % 10 > 1 & a / 10 % 10 < 10) & a % 10 == 1)
             {
                 Console.WriteLine(a + s);
             }
-            else if (((a / 10 >= 2 & a / 10 < 10) || a / 10 == 1) & (a % 10 >= 2 & a % 10 <= 4))
+            else if (((a / 10 % 10 >= 2 & a / 10 % 10 < 10) || a / 10 % 10 == 1) & (a % 10 >= 2 & a % 10 <= 4))
             {
                 Console.WriteLine(a+ p);
             }
