@@ -12,13 +12,42 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
+
+            int a;
+            int b;
+
+            Console.WriteLine("a=");
+            string tA = Console.ReadLine();
+            a = int.Parse(tA);
+            Console.WriteLine("b=");
+            string tB = Console.ReadLine();
+            b = int.Parse(tB);
+
+            //int N;
+            //double X;
+            //Console.WriteLine("N=");
+            //string t = Console.ReadLine();
+            //N = int.Parse(t);
+            //Console.WriteLine("X=");
+            //string tX = Console.ReadLine();
+            //X = int.Parse(tX);
+
+            //for22(N,X);
+            //Console.WriteLine("X=");
+            //tX = Console.ReadLine();
+            //X = int.Parse(tX);
+
+            //for22(N,X);
+            //for22(20,3);
+            //for20();
             //forfor2();
             //forfor1();
-            //for7();
+            for7(a,b);
+            for7(2, 3) ;
             //for6();
             //for5();
             //IFIF();
-            IF();
+            //IF();
             //For1();
             //begin4();
             //begin6();
@@ -39,7 +68,63 @@ namespace ConsoleApp3
 
             Console.ReadKey();
         }
+        static void for22(int N, double X)
+        {
+            double factorial = 1;
+            
+            double step ;
+            double sum=0;
+          
 
+            for (double i = 1; i <= N; i++)
+            {
+                factorial *= i;
+                step = Math.Pow(X,i);
+                sum +=( step / factorial);
+                double d = 1 + sum;
+                Console.WriteLine(d);
+            }
+        }
+        static void for21()
+        {
+            int N;
+            Console.WriteLine("N=");
+            string t = Console.ReadLine();
+            N = int.Parse(t);
+            double s = 1;
+            
+            double m = 0;
+            double f;
+
+            for (double i = 1; i <= N; i++)
+            {
+                s *= i;
+                m += 1 / (s);
+                
+                f = 1 + m;
+                Console.WriteLine(f);
+            }
+            
+            
+        }
+
+        static void for20()
+        {
+            int N;
+            Console.WriteLine("N=");
+            string t = Console.ReadLine();
+            N = int.Parse(t);
+            int s = 1;
+            int g=0;
+
+            for (int i = 1; i <= N; s*=i)
+            {
+                i++;
+                g+=s;
+                
+                Console.WriteLine(g);
+            }
+        }
         static void forfor2()
         {
             int a;
@@ -67,17 +152,9 @@ namespace ConsoleApp3
         }
 
 
-        static void for7()
+        static void for7(int a,int b)
         {
-            int a;
-            int b;
            
-            Console.WriteLine("a=");
-            string tA = Console.ReadLine();
-            a = int.Parse(tA);
-            Console.WriteLine("b=");
-            string tB = Console.ReadLine();
-            b = int.Parse(tB);
             int S = 0;
             for (int i = a; i<= b;i++)
             {
@@ -161,32 +238,7 @@ namespace ConsoleApp3
             {
                 Console.WriteLine(a + r);
             }
-            //int a;
-            //Console.WriteLine("a=");
-            //string t = Console.ReadLine();
-            //a = int.Parse(t);
-            //string r="рублей";
-
-
-
-            //if ((a / 10 %10== 2 || a / 10%10 == 3 || a / 10%10 == 4 || a / 10%10 == 5 || a / 10 %10== 6 || a / 10%10 == 7 || a / 10%10 == 8 || a / 10 %10== 9)&a % 10 == 1)
-            //{
-            //    Console.WriteLine(a + "рубль"); 
-            //}
-            //else if ((a / 10 ==2|| a / 10 %10== 3 || a / 10 %10== 4 || a / 10%10 == 5 || a / 10%10 == 6 || a / 10%10 == 7 || a / 10%10 == 8 || a / 10%10 == 9) &(a%10==2 || a % 10 == 3 || a % 10 == 4))
-            //{
-            //    Console.WriteLine(a+"рубля");
-            //}
-
-
-            //else if (a/10==1&(a%10==1|| a % 10 == 2||a % 10 == 3||a % 10 == 4||a % 10 == 5||a % 10 == 6||a % 10 == 7||a % 10 == 8||a % 10 == 9))
-            //{
-            //    Console.WriteLine(a + r);
-            //}
-            //else
-            //{
-            //    Console.WriteLine(a+r);
-            //}
+           
         }
 
         static void if9()
