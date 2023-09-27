@@ -171,6 +171,33 @@ namespace WindowsFormsApp1
                 MessageBox.Show(number + " рублей");
             }
         }
+        static void Boolean2(int A)
+        {
+            
 
+            if (A % 2 > 0)
+            {
+                MessageBox.Show("nechetnoe");
+
+            }
+            else
+            {
+                MessageBox.Show("chetnoe");
+            }
+        }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            int A;
+
+           
+            A = int.Parse(textBox14.Text);
+            Boolean2(A);
+        }
     }
 }

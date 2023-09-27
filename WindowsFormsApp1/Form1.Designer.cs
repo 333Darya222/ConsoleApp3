@@ -66,6 +66,10 @@ namespace WindowsFormsApp1
             this.label19 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -383,11 +387,51 @@ namespace WindowsFormsApp1
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(480, 161);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(104, 17);
+            this.label20.TabIndex = 41;
+            this.label20.Text = "введите число";
+            this.label20.Click += new System.EventHandler(this.label20_Click);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(500, 124);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(68, 17);
+            this.label21.TabIndex = 42;
+            this.label21.Text = "Boolean2";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(483, 190);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(100, 22);
+            this.textBox14.TabIndex = 43;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(483, 230);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(101, 31);
+            this.button6.TabIndex = 44;
+            this.button6.Text = "результат";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label20);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.label19);
@@ -472,6 +516,10 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Button button6;
     }
 }
 
