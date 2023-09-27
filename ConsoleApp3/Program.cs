@@ -13,15 +13,15 @@ namespace ConsoleApp3
         static void Main(string[] args)
         {
 
-            int a;
-            int b;
+            //int a;
+            //int b;
 
-            Console.WriteLine("a=");
-            string tA = Console.ReadLine();
-            a = int.Parse(tA);
-            Console.WriteLine("b=");
-            string tB = Console.ReadLine();
-            b = int.Parse(tB);
+            //Console.WriteLine("a=");
+            //string tA = Console.ReadLine();
+            //a = int.Parse(tA);
+            //Console.WriteLine("b=");
+            //string tB = Console.ReadLine();
+            //b = int.Parse(tB);
 
             //int N;
             //double X;
@@ -32,18 +32,21 @@ namespace ConsoleApp3
             //string tX = Console.ReadLine();
             //X = int.Parse(tX);
 
-            //for22(N,X);
-            //Console.WriteLine("X=");
-            //tX = Console.ReadLine();
-            //X = int.Parse(tX);
+            for24(N, X);
+            Console.WriteLine("X=");
+            tX = Console.ReadLine();
+            X = int.Parse(tX);
+            Console.WriteLine("N=");
+            tN = Console.ReadLine();
+            N = int.Parse(tN);
 
             //for22(N,X);
             //for22(20,3);
             //for20();
             //forfor2();
             //forfor1();
-            for7(a,b);
-            for7(2, 3) ;
+            //for7(a,b);
+            //for7(2, 3) ;
             //for6();
             //for5();
             //IFIF();
@@ -68,6 +71,26 @@ namespace ConsoleApp3
 
             Console.ReadKey();
         }
+
+        static void for24(int N, double X)
+        {
+            double factorial = 1;
+
+            double step;
+            double sum = 0;
+
+            for(double i=1; i<=N*2; i++)
+            {
+                factorial *= i;
+                step = Math.Pow(X, i);
+                sum += ((Math.Pow((-1),N)*step )/ factorial);
+                double d = 1 - sum;
+                Console.WriteLine(d);
+            }
+
+
+        }
+
         static void for22(int N, double X)
         {
             double factorial = 1;

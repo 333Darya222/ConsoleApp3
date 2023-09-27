@@ -21,14 +21,14 @@ namespace WindowsFormsApp1
         {
             int N;
             double X;
-            N = int.Parse(textBox1.Text);
-            X = double.Parse(textBox2.Text);
+            N = int.Parse(textBox2.Text);
+            X = double.Parse(textBox1.Text);
 
-            for22(N,X);
+            for24(N,X);
         }
 
 
-        static void for22(int N, double X)
+        static void for24(int N, double X)
         {
             double factorial = 1;
 
@@ -39,9 +39,12 @@ namespace WindowsFormsApp1
             for (double i = 1; i <= N; i++)
             {
                 factorial *= i;
-                step = Math.Pow(X, i);
-                sum += (step / factorial);
+               
+                step = Math.Pow(X, (i*2));
+                sum += ((Math.Pow(-1, i) * step) / (factorial*2));
                 double d = 1 + sum;
+                
+
                 MessageBox.Show(d.ToString());
             }
         }
@@ -71,6 +74,11 @@ namespace WindowsFormsApp1
             b = int.Parse(textBox3.Text);
 
             for7(a, b);
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
