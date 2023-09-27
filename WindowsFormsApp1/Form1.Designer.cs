@@ -70,6 +70,13 @@ namespace WindowsFormsApp1
             this.label21 = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -423,11 +430,78 @@ namespace WindowsFormsApp1
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(670, 124);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(23, 17);
+            this.label22.TabIndex = 45;
+            this.label22.Text = "if8";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(656, 161);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(104, 17);
+            this.label23.TabIndex = 46;
+            this.label23.Text = "введите числа";
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(651, 190);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(42, 22);
+            this.textBox15.TabIndex = 47;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(659, 230);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(100, 31);
+            this.button7.TabIndex = 48;
+            this.button7.Text = "результат";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(732, 190);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(41, 22);
+            this.textBox16.TabIndex = 49;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(629, 190);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(16, 17);
+            this.label24.TabIndex = 50;
+            this.label24.Text = "a";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(710, 190);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(16, 17);
+            this.label26.TabIndex = 52;
+            this.label26.Text = "b";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label26);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.textBox15);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.label22);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.textBox14);
             this.Controls.Add(this.label21);
@@ -520,6 +594,13 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label26;
     }
 }
 

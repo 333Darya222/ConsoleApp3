@@ -199,5 +199,31 @@ namespace WindowsFormsApp1
             A = int.Parse(textBox14.Text);
             Boolean2(A);
         }
+        static void if8(int a,int b)
+        {
+            
+            if (a < b)
+            {
+                MessageBox.Show(b + " " + a);
+            }
+            else if (b < a)
+            {
+                MessageBox.Show(a + " " + b);
+
+            }
+
+            else MessageBox.Show("числа равны");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            int a;
+            int b;
+            
+            a = int.Parse(textBox15.Text);
+            b = int.Parse(textBox16.Text);
+
+            if8(a, b);
+        }
     }
 }
