@@ -107,5 +107,33 @@ namespace WindowsFormsApp1
             double srar = (a + b + c + d + f)/5;
             MessageBox.Show(srar.ToString("0.000"));
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            double a;
+            double b;
+            double c;
+           
+            a = double.Parse(textBox5.Text);
+            b = double.Parse(textBox6.Text);
+            c = double.Parse(textBox7.Text);
+            
+
+
+            zad3(a, b, c);
+        }
+        static void zad3(double a, double b, double c)
+        {
+            if (a>0||b>0||c>0)
+            {
+                MessageBox.Show(.ToString("0.000"));
+            }
+
+        }
     }
 }
