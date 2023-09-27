@@ -42,10 +42,10 @@ namespace WindowsFormsApp1
                
                 step = Math.Pow(X, (i*2));
                 sum += ((Math.Pow(-1, i) * step) / (factorial*2));
-                double d = 1 + sum;
+                double itog = 1 + sum;
                 
 
-                MessageBox.Show(d.ToString());
+                MessageBox.Show(itog.ToString());
             }
         }
 
@@ -79,6 +79,33 @@ namespace WindowsFormsApp1
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            double a;
+            double b;
+            double c;
+            double d;
+            double f;
+            a = double.Parse(textBox9.Text);
+            b = double.Parse(textBox13.Text);
+            c= double.Parse(textBox12.Text);
+            d = double.Parse(textBox11.Text);
+            f = double.Parse(textBox10.Text);
+
+
+            zad2(a,b,c,d,f);
+        }
+        static void zad2(double a, double b, double c, double d, double f)
+        {
+            double srar = (a + b + c + d + f)/5;
+            MessageBox.Show(srar.ToString("0.000"));
         }
     }
 }

@@ -32,13 +32,13 @@ namespace ConsoleApp3
             //string tX = Console.ReadLine();
             //X = int.Parse(tX);
 
-            for24(N, X);
-            Console.WriteLine("X=");
-            tX = Console.ReadLine();
-            X = int.Parse(tX);
-            Console.WriteLine("N=");
-            tN = Console.ReadLine();
-            N = int.Parse(tN);
+            //for24(N, X);
+            //Console.WriteLine("X=");
+            //tX = Console.ReadLine();
+            //X = int.Parse(tX);
+            //Console.WriteLine("N=");
+            //tN = Console.ReadLine();
+            //N = int.Parse(tN);
 
             //for22(N,X);
             //for22(20,3);
@@ -82,10 +82,10 @@ namespace ConsoleApp3
             for(double i=1; i<=N*2; i++)
             {
                 factorial *= i;
-                step = Math.Pow(X, i);
-                sum += ((Math.Pow((-1),N)*step )/ factorial);
-                double d = 1 - sum;
-                Console.WriteLine(d);
+                step = Math.Pow(X, (i * 2));
+                sum += ((Math.Pow(-1, i) * step) / (factorial * 2));
+                double itog = 1 + sum;
+                Console.WriteLine(itog);
             }
 
 
