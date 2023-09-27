@@ -234,35 +234,29 @@ namespace ConsoleApp3
 
         }
 
-        static void IF()
+        static void rubles()
         {
-            int a;
-            Console.WriteLine("a=");
+
+            int number;
+            Console.WriteLine("введите число :");
             string t = Console.ReadLine();
-            a = int.Parse(t);
-
-            string r = "рублей";
-            string s = "рубль";
-            string p = "рубля";
-
-            if ((a / 10 % 10 > 1 & a / 10 % 10 < 10) & a % 10 == 1)
+            number = int.Parse(t);
+            int dozens = number / 10 % 10;
+            int unit = number % 10;
+            if ((unit == 1) && (dozens != 1))
             {
-                Console.WriteLine(a + s);
+                Console.WriteLine(number + " рубль");
             }
-            else if (((a / 10 % 10 >= 2 & a / 10 % 10 < 10) ) & (a % 10 >= 2 & a % 10 <= 4))
+            else if ((unit >= 2 && unit <= 4) && (dozens != 1))
             {
-                Console.WriteLine(a+ p);
-            }
-            else if (( a / 10 % 10 == 1)&(a%10>=1&a%10<=9))
-            {
-                Console.WriteLine(a + r);
+                Console.WriteLine(number + " рубля");
             }
             else
             {
-                Console.WriteLine(a + r);
+                Console.WriteLine(number + " рублей");
             }
-           
         }
+
 
         static void if9()
         {

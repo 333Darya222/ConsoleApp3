@@ -131,9 +131,46 @@ namespace WindowsFormsApp1
         {
             if (a>0||b>0||c>0)
             {
-                MessageBox.Show(.ToString("0.000"));
+                
+                MessageBox.Show("1");
+            }
+            else
+            {
+                MessageBox.Show("-1");
             }
 
         }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            int number;
+            number = int.Parse(textBox8.Text);
+            rubles(number);
+        }
+        static void rubles(int number)
+        {
+
+           
+            int dozens = number / 10 % 10;
+            int unit = number % 10;
+            if ((unit == 1) && (dozens != 1))
+            {
+                MessageBox.Show(number + " рубль");
+            }
+            else if ((unit >= 2 && unit <= 4) && (dozens != 1))
+            {
+                MessageBox.Show(number + " рубля");
+            }
+            else
+            {
+                MessageBox.Show(number + " рублей");
+            }
+        }
+
     }
 }
